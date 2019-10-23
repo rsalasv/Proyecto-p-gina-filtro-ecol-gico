@@ -1,0 +1,7 @@
+.navbar{
+    min-height: 120px;
+}
+
+.navbar-nav > li > a{
+    font-size: 22px;
+}
