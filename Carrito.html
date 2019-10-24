@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Carrito</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    #nav-carrito {
+        color: white;
+        font-size: 40px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        width: 40%;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    tr:first-of-type {
+        background-color: grey;
+    }
+
+    tr:last-of-type {
+        border: 0px;
+    }
+
+    th,
+    td {
+        padding: 15px;
+    }
+
+    #producto_jpg {
+        width: 25px;
+    }
+
+    th {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #carro-logo {
+        height: 50px;
+    }
+
+    #home{
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav navbar-right  mr-auto mt-2 mt-lg-0">
+                <p id="nav-carrito">Shopping cart</p>
+                
+                    <li class="nav-item"><a class="nav-link" href="ecoFilter.html" id="Home" style="position: absolute; left: 90%;" >HOME</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <table align="center">
+        <tr>
+            <th>Product</th>
+
+
+        </tr>
+        <tr>
+            <td>
+                Product&nbsp;&nbsp;&nbsp;<img src="imagenes/filtro.jpg" alt="" id="producto_jpg">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-light" data-toggle="modal" data-target="#modelId"
+                    style="position: absolute; left: 65%;">
+                    Info
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Product name</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" style="text-align: justify">
+
+                                Description: Eco-filtro para ahorro de agua para el hogar<br><br>
+                                Price: $$<br><br>
+                                Quantity: ##<br>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Product&nbsp;&nbsp;&nbsp;<img src="imagenes/filtro.jpg" alt="" id="producto_jpg">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-light" data-toggle="modal" data-target="#modelId"
+                    style="position: absolute; left: 65%;">
+                    Info
+                </button>
+            </td>
+
+
+        </tr>
+        <tr>
+            <td>
+                Product&nbsp;&nbsp;&nbsp;<img src="imagenes/filtro.jpg" alt="" id="producto_jpg">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-light" data-toggle="modal" data-target="#modelId"
+                    style="position: absolute; left: 65%;">
+                    Info
+                </button>
+            </td>
+
+
+        </tr>
+        <tr>
+            <td>
+                Product&nbsp;&nbsp;&nbsp;<img src="imagenes/filtro.jpg" alt="" id="producto_jpg">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-light" data-toggle="modal" data-target="#modelId"
+                    style="position: absolute; left: 65%;">
+                    Info
+                </button>
+            </td>
+
+
+        </tr>
+        <tr>
+            <td>
+                Product&nbsp;&nbsp;&nbsp;<img src="imagenes/filtro.jpg" alt="" id="producto_jpg">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-light" data-toggle="modal" data-target="#modelId"
+                    style="position: absolute; left: 65%;">
+                    Info
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right">
+                <p>TOTAL:______</p>
+                <button type="button" class="btn btn-danger">Cancel all </button>&nbsp;&nbsp;&nbsp;
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-success" data-toggle="modal" data-target="#Pay">
+                    Payment
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="Pay" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Payment</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!-- Tarjeta -->
+                            <div class="modal-body">
+                                <!-- CC NUMBER -->
+                                <div class="form-group" style="text-align: left">
+                                    <label for="Correo">Card number</label>
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-credit-card "></i></span>
+                                        </div>
+
+                                        <input type="email" class="form-control col-12" name="CC" id="Correo"
+                                            aria-describedby="helpId" placeholder="XXXX-XXXX-XXXX-XXXX">
+                                    </div>
+                                </div>
+                                <!-- Expiration date -->
+                                <div class="form-group" style="text-align: left">
+                                    <label for="Correo">Expiration number</label>
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                                        </div>
+
+                                        <input type="email" class="form-control col-12" name="Date" id="Correo"
+                                            aria-describedby="helpId" placeholder="00/00/0000">
+                                    </div>
+                                </div>
+                                <!-- CVV-->
+                                <div class="form-group" style="text-align: left">
+                                    <label for="Correo">CVV</label>
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                        </div>
+
+                                        <input type="email" class="form-control col-12" name="CVV" id="Correo"
+                                            aria-describedby="helpId" placeholder="XXX">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
