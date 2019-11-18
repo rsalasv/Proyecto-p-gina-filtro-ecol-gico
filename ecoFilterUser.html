@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Filter User</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js" charset="UTF-8"></script>-->
+    <script src="https://kit.fontawesome.com/401b6fc175.js"></script>
+    <style>
+    .navbar{
+        min-height: 120px;
+    }
+    .navbar-nav > li > a{
+        font-size: 22px;
+    }
+    .image{
+        float: left;
+    }
+    .makingSpce{
+        color: white;
+    }
+    #specifications{
+      background-color: lightgray;
+      width:100%;
+      height: 250px;
+    }
+    #contact{
+      height: 170px;
+      background-color: gray;
+    }
+    #otherPics{
+      background-color: rgb(255, 255, 255);
+      height: 450px;
+    }
+    .inContainerF{
+      align-self: center;
+      text-align: center;
+      margin: 20px 20px 20px 20px; 
+      padding: 20px 20px 20px 20px;
+    }
+    #spec{
+      height: 30px;
+      width: 30px;
+    }
+    #spec:hover{
+      height: 35px;
+      width: 35px;
+    }
+    #contUs{
+      width: 80px;
+      height: 80px;
+    }
+    </style>
+    
+
+</head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav navbar-right  mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="ecoFilter.html">LOG OUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="Carrito.html">SHOPPING CART</a></li>
+                <li class="nav-item"><a class="nav-link" href="information.html">INFORMATION</a></li>
+                <li class="nav-item"><a class="nav-link" href="ecoFilter.html#contact">CONTACT US</a></li>
+                <a class="navbar-right" style="position: absolute; left: 80%;" href="ecoFilter.html"><img src="logo.jpg"></a>
+            </ul>
+        </div>
+    </nav>
+    <p class="makingSpce">a</p>
+
+    <!--Imagen del filtro-->
+    <table>
+      <tr>
+        <td>
+          <img class="image" src="http://ecowater.no/images/products/ecofm-large.jpg" height="35%"></img>
+        </td>
+        <td>
+          <!--Información del filtro-->
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio odit earum facilis, vel aliquam ipsum? Aliquid, velit. Quaerat hic rem ducimus eaque enim dolore dignissimos dolor mollitia nostrum provident.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem modi ut odit ipsum accusantium corporis perspiciatis tempora repellendus voluptate fuga fugiat, recusandae placeat nostrum doloremque similique cum. Beatae, excepturi similique?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rem neque praesentium rerum expedita magni possimus voluptatum pariatur aperiam! Sed quam ut blanditiis. A praesentium reiciendis voluptates nobis, aut facere.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae molestiae eaque placeat, est corporis aspernatur voluptates assumenda labore necessitatibus repellat sed atque ipsum dolorem libero suscipit corrupti molestias iste ipsa!
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio odit earum facilis, vel aliquam ipsum? Aliquid, velit. Quaerat hic rem ducimus eaque enim dolore dignissimos dolor mollitia nostrum provident.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem modi ut odit ipsum accusantium corporis perspiciatis tempora repellendus voluptate fuga fugiat, recusandae placeat nostrum doloremque similique cum. Beatae, excepturi similique?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rem neque praesentium rerum expedita magni possimus voluptatum pariatur aperiam! Sed quam ut blanditiis. A praesentium reiciendis voluptates nobis, aut facere.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae molestiae eaque placeat, est corporis aspernatur voluptates assumenda labore necessitatibus repellat sed atque ipsum dolorem libero suscipit corrupti molestias iste ipsa!
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio odit earum facilis, vel aliquam ipsum? Aliquid, velit. Quaerat hic rem ducimus eaque enim dolore dignissimos dolor mollitia nostrum provident.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem modi ut odit ipsum accusantium corporis perspiciatis tempora repellendus voluptate fuga fugiat, recusandae placeat nostrum doloremque similique cum. Beatae, excepturi similique?</p>
+        </td>
+      </tr>
+    </table>
+    <button id="product1" class="btn btn-success" onclick="addFilter(event)">Add to cart</button>
+
+    
+    <hr>
+
+    <!--Specifications container-->
+    <div class="container-fluid" id="specifications">
+      <h2>Specifications</h2>
+      <div class="row" >
+        <div class="column" style="position: absolute; left: 10%;">
+          <h3><svg id="spec" aria-hidden="true" focusable="false" data-prefix="far" data-icon="cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cog fa-w-16 fa-3x"><path fill="currentColor" d="M452.515 237l31.843-18.382c9.426-5.441 13.996-16.542 11.177-27.054-11.404-42.531-33.842-80.547-64.058-110.797-7.68-7.688-19.575-9.246-28.985-3.811l-31.785 18.358a196.276 196.276 0 0 0-32.899-19.02V39.541a24.016 24.016 0 0 0-17.842-23.206c-41.761-11.107-86.117-11.121-127.93-.001-10.519 2.798-17.844 12.321-17.844 23.206v36.753a196.276 196.276 0 0 0-32.899 19.02l-31.785-18.358c-9.41-5.435-21.305-3.877-28.985 3.811-30.216 30.25-52.654 68.265-64.058 110.797-2.819 10.512 1.751 21.613 11.177 27.054L59.485 237a197.715 197.715 0 0 0 0 37.999l-31.843 18.382c-9.426 5.441-13.996 16.542-11.177 27.054 11.404 42.531 33.842 80.547 64.058 110.797 7.68 7.688 19.575 9.246 28.985 3.811l31.785-18.358a196.202 196.202 0 0 0 32.899 19.019v36.753a24.016 24.016 0 0 0 17.842 23.206c41.761 11.107 86.117 11.122 127.93.001 10.519-2.798 17.844-12.321 17.844-23.206v-36.753a196.34 196.34 0 0 0 32.899-19.019l31.785 18.358c9.41 5.435 21.305 3.877 28.985-3.811 30.216-30.25 52.654-68.266 64.058-110.797 2.819-10.512-1.751-21.613-11.177-27.054L452.515 275c1.22-12.65 1.22-25.35 0-38zm-52.679 63.019l43.819 25.289a200.138 200.138 0 0 1-33.849 58.528l-43.829-25.309c-31.984 27.397-36.659 30.077-76.168 44.029v50.599a200.917 200.917 0 0 1-67.618 0v-50.599c-39.504-13.95-44.196-16.642-76.168-44.029l-43.829 25.309a200.15 200.15 0 0 1-33.849-58.528l43.819-25.289c-7.63-41.299-7.634-46.719 0-88.038l-43.819-25.289c7.85-21.229 19.31-41.049 33.849-58.529l43.829 25.309c31.984-27.397 36.66-30.078 76.168-44.029V58.845a200.917 200.917 0 0 1 67.618 0v50.599c39.504 13.95 44.196 16.642 76.168 44.029l43.829-25.309a200.143 200.143 0 0 1 33.849 58.529l-43.819 25.289c7.631 41.3 7.634 46.718 0 88.037zM256 160c-52.935 0-96 43.065-96 96s43.065 96 96 96 96-43.065 96-96-43.065-96-96-96zm0 144c-26.468 0-48-21.532-48-48 0-26.467 21.532-48 48-48s48 21.533 48 48c0 26.468-21.532 48-48 48z" class=""></path></svg>
+          Capacity</h3>
+          <p>6 l/m. Made for daily use.</p>
+          <p>Minimum duration of 5 years.</p>
+        </div>
+        <div class="column" style="position: absolute; left: 40%;">
+          <h3><svg id="spec" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="arrows" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-arrows fa-w-16 fa-3x"><g class="fa-group"><path fill="currentColor" d="M440 256l-34.68 32H288v117.34L256 440l-32-34.68V288H106.66L72 256l34.68-32H224V106.66L256 72l32 34.67V224h117.34z" class="fa-secondary"></path><path fill="currentColor" d="M128.57 170.71l-.46-.47-10.83-10.84a24 24 0 0 0-33.93 0l-74 74a32 32 0 0 0 0 45.24l74 74a24 24 0 0 0 33.93 0l10.83-10.84.46-.47a24 24 0 0 0-.93-33.92L72 256l55.66-51.37a24 24 0 0 0 .91-33.92zm374.05 62.67l-74-74a24 24 0 0 0-33.93 0l-10.83 10.84-.46.47a24 24 0 0 0 .93 33.92L440 256l-55.66 51.37a24 24 0 0 0-.93 33.92l.46.47 10.83 10.84a24 24 0 0 0 33.93 0l74-74a32 32 0 0 0 0-45.24zM341.76 383.89l-.47-.46a24 24 0 0 0-33.92.93L256 440l-51.37-55.66a24 24 0 0 0-33.92-.93l-.47.46-10.84 10.85a24 24 0 0 0 0 33.93l74 74a32 32 0 0 0 45.24 0l74-74a24 24 0 0 0 0-33.93zM278.62 9.38a32 32 0 0 0-45.24 0l-74 74a24 24 0 0 0 0 33.93l10.84 10.83.47.46a24 24 0 0 0 33.92-.93L256 72l51.37 55.66a24 24 0 0 0 33.92.93l.47-.46 10.84-10.83a24 24 0 0 0 0-33.93z" class="fa-primary"></path></g></svg>
+          Measurements</h3>
+          <b>Tank:</b>
+          <p>Height: 25cm</p>
+          <p>Width: 10cm</p>
+        </div>
+        <div class="column" style="position: absolute; left: 70%;">
+          <h3><svg id="spec" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="paperclip" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-paperclip fa-w-16 fa-3x"><path fill="currentColor" d="M149.106 512c-33.076 0-66.153-12.59-91.333-37.771-50.364-50.361-50.364-132.305-.002-182.665L319.842 29.498c39.331-39.331 103.328-39.331 142.66 0 39.331 39.332 39.331 103.327 0 142.657l-222.63 222.626c-28.297 28.301-74.347 28.303-102.65 0-28.3-28.301-28.3-74.349 0-102.649l170.301-170.298c4.686-4.686 12.284-4.686 16.97 0l5.661 5.661c4.686 4.686 4.686 12.284 0 16.971l-170.3 170.297c-15.821 15.821-15.821 41.563.001 57.385 15.821 15.82 41.564 15.82 57.385 0l222.63-222.626c26.851-26.851 26.851-70.541 0-97.394-26.855-26.851-70.544-26.849-97.395 0L80.404 314.196c-37.882 37.882-37.882 99.519 0 137.401 37.884 37.881 99.523 37.882 137.404.001l217.743-217.739c4.686-4.686 12.284-4.686 16.97 0l5.661 5.661c4.686 4.686 4.686 12.284 0 16.971L240.44 474.229C215.26 499.41 182.183 512 149.106 512z" class=""></path></svg>
+          Documents</h3>
+          <p>Random doc.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Other products container-->
+    <div class="container-fluid" id="otherPics">
+      <h2>Other products</h2>
+      <div class="row">
+        <div class="column">
+            <button id="product2" class="btn btn-success" onclick="addFilter(event)">Add to cart</button>
+          <img src="http://ecowater.no/images/products/ecofriendly.jpg" style="position: absolute; left: 20%;">
+        </div>
+        <div class="column">
+          <img src="http://ecowater.no/images/products/ecogrovfilter.jpg" style="position: absolute; left: 50%;">
+        </div>
+      </div>
+      
+    </div>
+
+    <!--Contact us container-->
+    <div class="container-fluid" id="contact">
+      <h3>Contact us</h3>
+      <div class="row">
+        <div class="row"style="position: absolute; left: 10%;">
+          <div class="column">
+              <svg id="contUs" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-envelope fa-w-16 fa-3x"><path fill="currentColor" d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z" class=""></path></svg>
+          </div>
+          <div class="column">
+            <h2>E-mail</h2>
+            <p>queremosUn100@gmail.com</p>
+          </div>
+        </div>
+        <div class="row" style="position: absolute; left: 40%;">
+          <div class="column">
+              <svg id="contUs" aria-hidden="true" focusable="false" data-prefix="far" data-icon="phone-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-phone-alt fa-w-16 fa-3x"><path fill="currentColor" d="M484.25 330l-101.59-43.55a45.86 45.86 0 0 0-53.39 13.1l-32.7 40a311.08 311.08 0 0 1-124.19-124.12l40-32.7a45.91 45.91 0 0 0 13.1-53.42L182 27.79a45.63 45.63 0 0 0-52.31-26.61L35.5 22.89A45.59 45.59 0 0 0 0 67.5C0 313.76 199.68 512.1 444.56 512a45.58 45.58 0 0 0 44.59-35.51l21.7-94.22a45.75 45.75 0 0 0-26.6-52.27zm-41.59 134.09C225.08 463.09 49 287 48 69.3l90.69-20.9 42.09 98.22-68.09 55.71c46.39 99 98.19 150.63 197 197l55.69-68.11 98.19 42.11z" class=""></path></svg>
+          </div>
+          <div class="column">
+            <h2>Phone</h2>
+            <p>+52 33 1940 1698</p>
+          </div>
+        </div>
+        <div class="row" style="position: absolute; left: 70%;">
+          <div class="column">
+              <svg id="contUs" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-facebook fa-w-16 fa-3x"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" class=""></path></svg>
+          </div>
+          <div class="column">
+            <h2>Facebook</h2>
+            <p>Visit us on facebook.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal  Login-->
+    <div class="modal fade" id="LoginM" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+                  <div class="modal-header">
+                          <h5 class="modal-title">Login</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                  </div>
+              <div class="modal-body">
+                  <div class="container-fluid">
+                      <div class="row">
+                              <p>Email</p>
+                              <div class="input-group mb-3">
+                                  <div class="input-group-prepend">
+                                      <span class="input-group-text" id="user"><i class="fas fa-user"></i></span>
+                                      <input type="mail" class="form-control" placeholder="Your email" id="loginCorreo" aria-label="Username" aria-describedby="user">
+                                  </div>
+                              </div>
+                      </div>
+                      <div class="row">
+                              <p>Password</p>
+                              <div class="input-group mb-3">
+                                  <div class="input-group-prepend">
+                                      <span class="input-group-text" id="user"><i class="fas fa-key"></i></span>
+                                      <input type="password" id="loginContraseña" class="form-control" placeholder="Your password" aria-label="Password" aria-describedby="user">
+                                  </div>
+                              </div>
+                      </div>
+                          <a href="UserManagement.html" class="btn btn-success" id="loginBtn">Login</a>
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>        
+              </div>
+              <div class="modal-footer">
+                  <p>New here? <a href="Registros" class="col-sm-3" data-toggle="modal" data-dismiss="modal" data-target="#RegistroM">Sign up here!</a></p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+   <!-- Modal  Registro-->
+   <div class="modal fade" id="registroM" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+                <div class="modal-header">
+                        <h5 class="modal-title">Registro</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="container-fluid">
+                    <div class="row">
+                        <p>User Name</p>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="user"><i class="fas fa-user"></i></span>
+                                <input type="text" id="nombreUsuario" class="form-control" placeholder="Your user name" aria-label="Password" aria-describedby="user">
+                            </div>
+                      </div>
+                  </div>
+                    <div class="row">
+                            <p>Email</p>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="user"><i class="fas fa-list-alt"></i></span>
+                                    <input type="text" id="emailRegistro" class="form-control" placeholder="Your email" aria-label="Password" aria-describedby="user">
+                                </div>
+                          </div>
+                    </div>
+                    <div class="row">
+                            <p>Password</p>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="user"><i class="fas fa-key"></i></span>
+                                    <input type="password" id="contra1" class="form-control" placeholder="Your password" aria-label="Password" aria-describedby="user">
+                                </div>
+                          </div>
+                    </div>
+                    <div class="row">
+                      <p>Confirm Password</p>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text" id="user"><i class="fas fa-key"></i></span>
+                              <input type="password" id="contra2" class="form-control" placeholder="Confirm password" aria-label="Password" aria-describedby="user">
+                          </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <p>Gender</p>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="user"><i class="fas fa-smile"></i></span>
+                                <input type="text" id="genero" class="form-control" placeholder="H or M" aria-label="Password" aria-describedby="user">
+                            </div>
+                      </div>
+                      </div>
+                        <button type="button" class="btn btn-success" id ="registroBtn" data-dismiss="modal">Register</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>  
+              </form>      
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Optional JavaScript -->
+    <script src="ecoFilterUser.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="ecoFilter.js"></script>
+  </body>
+</html>

@@ -18,44 +18,35 @@
         color: white;
         font-size: 40px;
     }
-
     table,
     th,
     td {
         border: 1px solid black;
         width: 40%;
     }
-
     tr:nth-child(even) {
         background-color: #dddddd;
     }
-
     tr:first-of-type {
         background-color: grey;
     }
-
     tr:last-of-type {
         border: 0px;
     }
-
     th,
     td {
         padding: 15px;
     }
-
     #producto_jpg {
         width: 25px;
     }
-
     th {
         font-size: 20px;
         text-align: center;
     }
-
     #carro-logo {
         height: 50px;
     }
-
     #home{
         font-size: 20px;
     }
@@ -72,12 +63,11 @@
             <ul class="navbar-nav navbar-right  mr-auto mt-2 mt-lg-0">
                 <p id="nav-carrito">Shopping cart</p>
                 
-                    <li class="nav-item"><a class="nav-link" href="ecoFilter.html" id="Home" style="position: absolute; left: 90%;" >HOME</a></li>
-
+                    <li class="nav-item"><a class="nav-link" href="ecoFilterUser.html" id="Home" style="position: absolute; left: 90%;" >HOME</a></li>
+                    
             </ul>
         </div>
     </nav>
-
     <br>
     <br>
     <br>
@@ -86,95 +76,13 @@
     <table align="center">
         <tr>
             <th>Product</th>
-
-
         </tr>
-        <tr>
-            <td>
-                Product&nbsp;&nbsp;&nbsp;<img src="filtro.jpg" alt="" id="producto_jpg">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-light" data-toggle="modal" data-target="#modelId"
-                    style="position: absolute; left: 65%;">
-                    Info
-                </button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Product name</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body" style="text-align: justify">
-
-                                Description: Eco-filtro para ahorro de agua para el hogar<br><br>
-                                Price: $$<br><br>
-                                Quantity: ##<br>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-danger">Cancel</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
+        <tr id="cart">
         </tr>
-        <tr>
-            <td>
-                Product&nbsp;&nbsp;&nbsp;<img src="filtro.jpg" alt="" id="producto_jpg">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-light" data-toggle="modal" data-target="#modelId"
-                    style="position: absolute; left: 65%;">
-                    Info
-                </button>
-            </td>
-
-
-        </tr>
-        <tr>
-            <td>
-                Product&nbsp;&nbsp;&nbsp;<img src="filtro.jpg" alt="" id="producto_jpg">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-light" data-toggle="modal" data-target="#modelId"
-                    style="position: absolute; left: 65%;">
-                    Info
-                </button>
-            </td>
-
-
-        </tr>
-        <tr>
-            <td>
-                Product&nbsp;&nbsp;&nbsp;<img src="filtro.jpg" alt="" id="producto_jpg">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-light" data-toggle="modal" data-target="#modelId"
-                    style="position: absolute; left: 65%;">
-                    Info
-                </button>
-            </td>
-
-
-        </tr>
-        <tr>
-            <td>
-                Product&nbsp;&nbsp;&nbsp;<img src="filtro.jpg" alt="" id="producto_jpg">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-light" data-toggle="modal" data-target="#modelId"
-                    style="position: absolute; left: 65%;">
-                    Info
-                </button>
-            </td>
-        </tr>
-        <tr>
+        
             <td style="text-align: right">
-                <p>TOTAL:______</p>
-                <button type="button" class="btn btn-danger">Cancel all </button>&nbsp;&nbsp;&nbsp;
+                <p id="price">TOTAL:</p>
+                <button type="button" class="btn btn-danger" onclick="removeAll()">Cancel all </button>&nbsp;&nbsp;&nbsp;
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary btn-success" data-toggle="modal" data-target="#Pay">
                     Payment
@@ -253,6 +161,7 @@
 </html>
 
 <!-- Optional JavaScript -->
+<script src="Carrito.js"  onload="loadCart()"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
