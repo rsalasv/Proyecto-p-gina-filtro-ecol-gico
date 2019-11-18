@@ -12,20 +12,17 @@
     <script src="https://kit.fontawesome.com/401b6fc175.js"></script>
     <style>
     .navbar{
-        min-height: 120px;
+        min-height: 80px;
     }
-
     .navbar-nav > li > a{
         font-size: 22px;
     }
-
     .image{
         float: left;
     }
     .makingSpce{
         color: white;
     }
-
     #specifications{
       background-color: lightgray;
       width:100%;
@@ -35,36 +32,28 @@
       height: 170px;
       background-color: gray;
     }
-
     #otherPics{
       background-color: rgb(255, 255, 255);
       height: 450px;
     }
-
     .inContainerF{
       align-self: center;
       text-align: center;
       margin: 20px 20px 20px 20px; 
       padding: 20px 20px 20px 20px;
     }
-
     #spec{
       height: 30px;
       width: 30px;
     }
-
     #spec:hover{
       height: 35px;
       width: 35px;
     }
-
-
     #contUs{
       width: 80px;
       height: 80px;
     }
-
-
     </style>
     
 
@@ -78,9 +67,9 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav navbar-right  mr-auto mt-2 mt-lg-0">
-                <li class="nav-item"><a class="nav-link" href="Carrito.html">SHOPPING CART</a></li>
                 <li class="nav-item"><a class="nav-link" href="information.html">INFORMATION</a></li>
                 <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#LoginM">LOGIN</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" id="registroUsuariosuariosuario" data-target="#registroM">REGISTER</a></li>
                 <li class="nav-item"><a class="nav-link" href="ecoFilter.html#contact">CONTACT US</a></li>
                 <a class="navbar-right" style="position: absolute; left: 80%;" href="ecoFilter.html"><img src="logo.jpg"></a>
             </ul>
@@ -111,6 +100,7 @@
         </td>
       </tr>
     </table>
+
     
     <hr>
 
@@ -187,7 +177,7 @@
       </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal  Login-->
     <div class="modal fade" id="LoginM" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
       <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -204,7 +194,7 @@
                               <div class="input-group mb-3">
                                   <div class="input-group-prepend">
                                       <span class="input-group-text" id="user"><i class="fas fa-user"></i></span>
-                                      <input type="mail" class="form-control" placeholder="Your email" aria-label="Username" aria-describedby="user">
+                                      <input type="mail" class="form-control" placeholder="Your email" id="loginCorreo" aria-label="Username" aria-describedby="user">
                                   </div>
                               </div>
                       </div>
@@ -213,11 +203,11 @@
                               <div class="input-group mb-3">
                                   <div class="input-group-prepend">
                                       <span class="input-group-text" id="user"><i class="fas fa-key"></i></span>
-                                      <input type="password" class="form-control" placeholder="Your password" aria-label="Password" aria-describedby="user">
+                                      <input type="password" id="loginContraseña" class="form-control" placeholder="Your password" aria-label="Password" aria-describedby="user">
                                   </div>
                               </div>
                       </div>
-                          <a href="UserManagement.html" class="btn btn-success">Login</a>
+                          <a href="UserManagement.html" class="btn btn-success" id="loginBtn">Login</a>
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   </div>        
               </div>
@@ -227,10 +217,79 @@
           </div>
       </div>
   </div>
+ 
+
+   <!-- Modal  Registro-->
+   <div class="modal fade" id="registroM" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+                <div class="modal-header">
+                        <h5 class="modal-title">Registro</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="container-fluid">
+                    <div class="row">
+                        <p>User Name</p>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="user"><i class="fas fa-user"></i></span>
+                                <input type="text" id="nombreUsuario" class="form-control" placeholder="Your user name" aria-label="Password" aria-describedby="user">
+                            </div>
+                      </div>
+                  </div>
+                    <div class="row">
+                            <p>Email</p>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="user"><i class="fas fa-list-alt"></i></span>
+                                    <input type="text" id="emailRegistro" class="form-control" placeholder="Your email" aria-label="Password" aria-describedby="user">
+                                </div>
+                          </div>
+                    </div>
+                    <div class="row">
+                            <p>Password</p>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="user"><i class="fas fa-key"></i></span>
+                                    <input type="password" id="contra1" class="form-control" placeholder="Your password" aria-label="Password" aria-describedby="user">
+                                </div>
+                          </div>
+                    </div>
+                    <div class="row">
+                      <p>Confirm Password</p>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text" id="user"><i class="fas fa-key"></i></span>
+                              <input type="password" id="contra2" class="form-control" placeholder="Confirm password" aria-label="Password" aria-describedby="user">
+                          </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <p>Gender</p>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="user"><i class="fas fa-smile"></i></span>
+                                <input type="text" id="genero" class="form-control" placeholder="H or M" aria-label="Password" aria-describedby="user">
+                            </div>
+                      </div>
+                      </div>
+                        <button type="button" class="btn btn-success" id ="registroBtn" data-dismiss="modal">Register</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>  
+              </form>      
+            </div>
+        </div>
+    </div>
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="ecoFilter.js"></script>
   </body>
 </html>

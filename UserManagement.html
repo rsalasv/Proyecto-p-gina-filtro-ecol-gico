@@ -1,108 +1,63 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
+
+<head>
+    <title>Admin</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <stye src="userM.css"></stye>
+
     <script src="https://kit.fontawesome.com/401b6fc175.js"></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    .navbar {
+        min-height: 80px;
+    }
+
+    .navbar-nav>li>a {
+        font-size: 22px;
+    }
+</style>
+
+<body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-          aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav navbar-right  mr-auto mt-2 mt-lg-0">
-                <li class="nav-item"><a class="nav-link" href="Carrito.html">SHOPPING CART</a></li>
-                <li class="nav-item"><a class="nav-link" href="information.html">INFORMATION</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#LoginM">LOGIN</a></li>
-                <li class="nav-item"><a class="nav-link" href="ecoFilter.html">CONTACT US</a></li>
-                <a class="navbar-right" style="position: absolute; left: 80%;"><img src="logo.jpg" width="60%" height="60%"></a>
+                <li class="nav-item"><a class="nav-link" href="ecoFilter.html">LOG OUT</a></li>
+                <a class="navbar-right" style="position: absolute; left: 80%;"><img src="logo.jpg" width="60%"
+                        height="60%"></a>
             </ul>
         </div>
     </nav>
-    
-    <!-- Modal -->
-    <div class="modal fade" id="LoginM" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                    <div class="modal-header">
-                            <h5 class="modal-title">Login</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                    </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                                <p>Email</p>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="user"><i class="fas fa-user"></i></span>
-                                        <input type="mail" class="form-control" placeholder="Your email" aria-label="Username" aria-describedby="user">
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="row">
-                                <p>Password</p>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="user"><i class="fas fa-key"></i></span>
-                                        <input type="password" class="form-control" placeholder="Your password" aria-label="Password" aria-describedby="user">
-                                    </div>
-                                </div>
-                        </div>
-                            <a href="UserManagement.html" class="btn btn-success">Login</a>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>        
-                </div>
-                <div class="modal-footer">
-                    <p>New here? <a href="Registros" class="col-sm-3" data-toggle="modal" data-dismiss="modal" data-target="#RegistroM">Sign up here!</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="container" style="margin-block: 70px">
-        <div class="row content-left">
-            <div class="col-12 col-md-10 col-lg-8">
-                <form>
-                    <div class="row">
-                       <div class="col">
-                            <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search user">
-                        </div>
-                        <div class="col-auto">
-                            <button class="btn btn-lg btn-primary" type="submit"> <i class="fa fa-search" aria-hidden="true"></i></button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+
 
     <div class="media border p-3" style="margin-block: 70px; width:95%; margin:auto; margin-block: 50px">
         <div class="media-left">
-          <img src="https://randomuser.me/api/portraits/men/69.jpg" class="media-object rounded-circle">
+            <img src="https://randomuser.me/api/portraits/men/69.jpg" class="media-object rounded-circle">
         </div>
         <div class="media-body">
-          <h4 class="media-heading">John Doe</h4>
-          <p>E-Mail: jdoe@test.com</p>
-          <p>Birthday: 01-01-2001</p>
-          <p>Gender: Man</p>
-          <p>Role: Administrator</p>
+            <h4 class="media-heading">John Doe</h4>
+            <p>E-Mail: jdoe@test.com</p>
+            <p>Gender: Man</p>
+            <p>Role: Administrator</p>
         </div>
         <div class="media-right">
             <div class="row" style="margin:auto; margin-block: 10px">
-                <button class="btn btn-lg btn-primary" data-toggle="modal" data-target="#Edicion"><i class="fa fa-pencil" aria-hidden="true" ></i></button>
+                <button class="btn btn-lg btn-primary" data-toggle="modal" data-target="#Edicion"><i
+                        class="fa fa-pencil" aria-hidden="true"></i></button>
             </div>
             <div class="row" style="margin:auto; margin-block: 10px">
-                <button class="btn btn-lg btn-primary" data-toggle="modal" data-target="#Borrar"><i class="fa fa-trash" aria-hidden="true" ></i></button>
+                <button class="btn btn-lg btn-primary" data-toggle="modal" data-target="#Borrar"><i class="fa fa-trash"
+                        aria-hidden="true"></i></button>
             </div>
         </div>
     </div>
@@ -153,60 +108,128 @@
             </tr>
         </table>
     </div>
-    
-    <!-- Modal -->
-    <div class="modal fade" id="Edicion" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-        <div class="vertical-alignment-helper">
-                <div class="modal-dialog vertical-align-center" role="document" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width:125%">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Change role</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                            </div>
-                            <div class="modal-body">
-                                    <form>
-                                            <select id="Roles">
-                                                <option value="Admin">Administrator</option>
-                                                <option value="Customer">Customer</option>
-                                                <option value="Supplier">Supplier</option>
-                                                <option value="Editor">Editor</option>
-                                            </select>
-                                    </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        
 
-    <div class="modal fade" id="Borrar" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-        <div class="modal-dialog" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width:125%" role="document">
+    <!-- Modal Edit-->
+    <div class="modal fade" id="Edicion" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Are you sure you want to delete your profile?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                    <h5 class="modal-title">Edit user</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-danger">Delete</button>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <p>Update Name</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="user"><i class="fas fa-user"></i></span>
+                                        <input type="text" id="editName" class="form-control"
+                                            placeholder="Your user name" aria-label="Password" aria-describedby="user">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>Update email</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="user"><i class="fas fa-list-alt"></i></span>
+                                        <input type="text" id="editEmail" class="form-control"
+                                            placeholder="Your email" aria-label="Password" aria-describedby="user">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>New password</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="user"><i class="fas fa-key"></i></span>
+                                        <input type="password" id="editContra1" class="form-control"
+                                            placeholder="Your password" aria-label="Password" aria-describedby="user">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>Confirm Password</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="user"><i class="fas fa-key"></i></span>
+                                        <input type="password" id="editContra2" class="form-control"
+                                            placeholder="Confirm password" aria-label="Password"
+                                            aria-describedby="user">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn btn-success" id="updateBtn" data-dismiss="modal">Update user</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal Borrar-->
+
+    <div class="modal fade" id="Borrar" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog"
+            style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width:125%"
+            role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Are you sure you want to delete your profile?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" id="btnRemove" class="btn btn-danger" data-dismiss="modal">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Boton para mostrar los usuarios -->
+    <button class="btn btn-primary" id="usersBtn">Show all users</button>
+
+    <!-- Tabla que contiene los usuarios -->
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-2 custyle">
+            <table class="table table-striped custab">
+                <thead id="usuariosId">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Contraseña</th>
+                        <th> correo</th>
+                        <th class="text-center">Gender</th>
+                        <th>ID</th>
+                        <th class="text-center">Action</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="UserManagement.js"></script>
+</body>
+
 </html>
