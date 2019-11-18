@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>ecoFilter</title>
+    <title>Filter User</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/401b6fc175.js"></script>
     <style>
     .navbar{
-        min-height: 80px;
+        min-height: 120px;
     }
     .navbar-nav > li > a{
         font-size: 22px;
@@ -67,9 +67,9 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav navbar-right  mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="ecoFilter.html">LOG OUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="Carrito.html">SHOPPING CART</a></li>
                 <li class="nav-item"><a class="nav-link" href="information.html">INFORMATION</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#LoginM">LOGIN</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" id="registroUsuariosuariosuario" data-target="#registroM">REGISTER</a></li>
                 <li class="nav-item"><a class="nav-link" href="ecoFilter.html#contact">CONTACT US</a></li>
                 <a class="navbar-right" style="position: absolute; left: 80%;" href="ecoFilter.html"><img src="logo.jpg"></a>
             </ul>
@@ -100,6 +100,7 @@
         </td>
       </tr>
     </table>
+    <button id="product1Btn" class="btn btn-success">Add to cart</button>
 
     
     <hr>
@@ -134,6 +135,7 @@
       <h2>Other products</h2>
       <div class="row">
         <div class="column">
+            <button id="product2Btn" class="btn btn-success">Add to cart</button>
           <img src="http://ecowater.no/images/products/ecofriendly.jpg" style="position: absolute; left: 20%;">
         </div>
         <div class="column">
@@ -217,7 +219,7 @@
           </div>
       </div>
   </div>
- 
+  
 
    <!-- Modal  Registro-->
    <div class="modal fade" id="registroM" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">

@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "nombre": "Juan",
+      "email": "is715592@iteso.mx",
+      "contraseña": "1234",
+      "genero": "H"
+    },
+    {
+      "nombre": "Alfonso",
+      "email": "Ramirez",
+      "contraseña": "123",
+      "genero": "H",
+      "id": "6V7x-jF"
+    },
+    {
+      "nombre": "Marcod",
+      "email": "Marco@hotmail.com",
+      "contraseña": "123",
+      "id": "SqLBB95"
+    }
+  ],
+  "products": [
+    {
+      "nombre": "ecoFilter1",
+      "costo": "$2,500",
+      "compañía": "Ambient Care"
+    },
+    {
+      "nombre": "Fill watter",
+      "costo": "$3,000",
+      "compañía": "Filter Company"
+    },
+    {
+      "nombre": "Aqua filter",
+      "costo": "$2,000",
+      "compañía": "Aqua man"
+    }
+  ]
+}
