@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+            .svg-inline--fa{
+            height: 20px;
+            width: 20px;
+        }
+    </style>
+
+</head>
+  <body>
+          <!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav navbar-right  mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="ecoFilter.html">LOG OUT</a></li>
+                <a class="navbar-right" style="position: absolute; left: 80%;"><img src="logo.jpg" width="60%"
+                        height="60%"></a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="media border p-3" style="margin-block: 70px; width:95%; margin:auto; margin-block: 50px">
+        <div class="media-left">
+            <img src="data:image/jpeg;base64,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" class="media-object">
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">Filter</h4>
+            <p>Price: $$</p>
+            <p>Color: RR-GG-BB</p>
+            <p>Capacity: 100L</p>
+        </div>
+        <div class="media-right">
+            <div class="row" style="margin:auto; margin-block: 10px">
+                <button class="btn btn-lg btn-primary" data-toggle="modal" data-target="#Edicion"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pencil-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-pencil-alt fa-w-16 fa-5x"><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z" class=""></path></svg></button>
+            </div>
+            <div class="row" style="margin:auto; margin-block: 10px">
+                <button class="btn btn-lg btn-primary" data-toggle="modal" data-target="#Borrar"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-trash fa-w-14 fa-5x"><path fill="currentColor" d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z" class=""></path></svg></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Edit-->
+    <div class="modal fade" id="Edicion" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit user</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <p>Image url</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="url"><i class="fas fa-user"></i></span>
+                                        <input type="text" id="url" class="form-control"
+                                            placeholder="URL" aria-label="Password" aria-describedby="user">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>Name</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="user"><i class="fas fa-list-alt"></i></span>
+                                        <input type="text" id="name" class="form-control"
+                                            placeholder="Product name" aria-label="Password" aria-describedby="user">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>Price</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="user"><i class="fas fa-key"></i></span>
+                                        <input type="password" id="price" class="form-control"
+                                            placeholder="Product price" aria-label="Password" aria-describedby="user">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>Company</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="user"><i class="fas fa-key"></i></span>
+                                        <input type="password" id="comp" class="form-control"
+                                            placeholder="Product company" aria-label="Password"
+                                            aria-describedby="user">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn btn-success" id="updateBtn" data-dismiss="modal">Update product</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Borrar-->
+
+    <div class="modal fade" id="Borrar" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog"
+            style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width:125%"
+            role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Are you sure you want to delete that product?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" id="btnRemove" class="btn btn-danger" data-dismiss="modal">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Boton para mostrar los productos -->
+    <button class="btn btn-primary" id="productsBtn">Show all products</button>
+
+    <!-- Tabla que contiene los productos -->
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-2 custyle">
+            <table class="table table-striped custab">
+                <thead id="productosId">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Company</th>
+                        <th>ID</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="Productos.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
