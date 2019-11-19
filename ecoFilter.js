@@ -35,7 +35,7 @@ registroBtn.addEventListener("click", function (event) {
     let contra1 = document.getElementById('contra1').value
     let contra2 = document.getElementById('contra2').value
     let genero = document.getElementById('genero').value
-
+ 
 
     //LOS VALORES DE LAS VARIABLES LAS PASAMOS A UN OBJETO 
     datosRegistro = {
