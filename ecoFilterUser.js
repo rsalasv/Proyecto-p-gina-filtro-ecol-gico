@@ -6,7 +6,7 @@ let urlProductos = "http://localhost:3000/products"
 let cart={products:[],size:0}
 let cartIndex;
 if(localStorage.getItem("index")===null)
-    cartIndex=0;
+    cartIndex=1;
 else
     cartIndex=localStorage.getItem("index");
 
