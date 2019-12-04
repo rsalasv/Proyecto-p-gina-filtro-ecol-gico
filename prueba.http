@@ -1,0 +1,17 @@
+###
+@host = http://localhost:3000
+###
+POST {{host}}/api/Ecofiltro
+Content-Type: application/json
+
+{
+    "name": "Alejandro",
+    "email": "is715593@iteso.mx",
+    "password": "4321",
+    "id":2
+}
+
+###
+GET {{host}}/api/Ecofiltro
+Content-Type: application/json
+
