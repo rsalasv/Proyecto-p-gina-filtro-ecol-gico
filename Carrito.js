@@ -1,8 +1,7 @@
 "use strict"
-
 var finalPrice=0;
 
-var urlProducts="http://localhost:3000/products/"
+var urlProducts="http://localhost:3000/api/Productos/"
 var itemRequest = new XMLHttpRequest();
 
 function loadCart(){
@@ -17,10 +16,14 @@ function loadCart(){
         console.log(item);
         if(item!=null){
             itemRequest.open('GET',urlProducts+item,false);
-            //console.log(urlProducts+item);
+            console.log(urlProducts+item);
             itemRequest.setRequestHeader('Content-Type','application/json');
             itemRequest.addEventListener("readystatechange",checkItem);
-            itemRequest.send();
+            let array=new Array;
+            array.push(item);
+            let payload=JSON.stringify(array[0]);
+            console.log(payload);
+            itemRequest.send(payload);
         }
     }
 
