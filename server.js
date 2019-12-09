@@ -1,8 +1,13 @@
 'use strict'
-//Juan Pablo Ramos Robles 
+//Juan Pablo Ramos Robles
+//Isaac Eduardo Gauna Blancarte
+//Este server.js sirve tanto como router como servidor, tiene todas las rutas y todos los métodos del servidor.
 
+const http=require('http');
+const fs=require('fs')
 const express = require('express')
 const jwt = require('jsonwebtoken')
+const path=require('path');
 const Product=require('./models/product');
 const app = express()
 const {
@@ -12,10 +17,103 @@ const {
     getUser,
     showUsers
 } = require('./Usuarios')
-const port = 3000
+const port = process.env.PORT || 3000;
+const url="http://localhost:3000";
+
 app.use(express.json())
+
 app.listen(port, () => console.log(`Conectado a http://localhost:${port}`))
 
+app.route('/')
+    .get(async function(req,res){
+        res.set({
+            'Content-Type':'text/html',
+            'X-Content-Type-Options':'nosniff'
+        });
+        res.sendFile(path.join(__dirname+'/ecoFilter.html'));
+});
+
+app.route('/ecoFilter.js')
+    .get(async function(req,res){
+        res.set({
+            'Content-Type':'application/javascript',
+            'X-Content-Type-Options':'nosniff'
+        });
+        res.sendFile(path.join(__dirname+'/ecoFilter.js'));
+});
+
+app.route('/ecoFilter.html')
+    .get(async function(req,res){
+        res.set({
+            'Content-Type':'text/html',
+            'X-Content-Type-Options':'nosniff'
+        });
+        res.sendFile(path.join(__dirname+'/ecoFilter.html'));
+});
+
+app.route('/Carrito.html')
+    .get(async function(req,res){
+        res.set({
+            'Content-Type':'text/html',
+            'X-Content-Type-Options':'nosniff'
+        });
+        res.sendFile(path.join(__dirname+'/Carrito.html'));
+});
+
+app.route('/Carrito.js')
+    .get(async function(req,res){
+        res.set({
+            'Content-Type':'application/javascript',
+            'X-Content-Type-Options':'nosniff'
+        });
+        res.sendFile(path.join(__dirname+'/Carrito.js'));
+});
+
+app.route('/ecoFilterUser.html')
+    .get(async function(req,res){
+        res.set({
+            'Content-Type':'text/html',
+            'X-Content-Type-Options':'nosniff'
+        });
+        res.sendFile(path.join(__dirname+'/ecoFilterUser.html'));
+});
+
+app.route('/ecoFilterUser.js')
+    .get(async function(req,res){
+        res.set({
+            'Content-Type':'application/javascript',
+            'X-Content-Type-Options':'nosniff'
+        });
+        res.sendFile(path.join(__dirname+'/ecoFilterUser.js'));
+});
+
+app.route('/information.html')
+    .get(async function(req,res){
+        res.set({
+            'Content-Type':'text/html',
+            'X-Content-Type-Options':'nosniff'
+        });
+        res.sendFile(path.join(__dirname+'/information.html'));
+});
+
+app.route('/UserManagement.html')
+    .get(async function(req,res){
+        res.set({
+            'Content-Type':'text/html',
+            'X-Content-Type-Options':'nosniff'
+        });
+        res.sendFile(path.join(__dirname+'/UserManagement.html'));
+
+});
+
+app.route('/UserManagement.js')
+    .get(async function(req,res){
+        res.set({
+            'Content-Type':'application/javascript',
+            'X-Content-Type-Options':'nosniff'
+        });
+        res.sendFile(path.join(__dirname+'/UserManagement.js'));
+});
 
 app.route('/users')
 
@@ -83,14 +181,7 @@ function verifyToken(req,res,next){
 }
 
 app.route('/api/Productos')
-    .get(async(req,res)=>{
-    try{
-        const Prod=await Product.find({});
-        return res.send(Prod);
-    }catch (err){
-        return res.status(500).json({message: err.message});
-    }
-}).post(async (req,res)=>{
+    .post(async (req,res)=>{
     const product= new Product({
         id:req.body.id,
         nombre:req.body.nombre,
@@ -107,21 +198,13 @@ app.route('/api/Productos')
 })
 
 app.route('/api/Productos/:id')
-    .get(getProduct,(req,res)=>{
-        console.log(res.product);
-        return res.json(res.product)
-    })
-
-async function getProduct(req,res,next){
-    let product;
-    try{
-        product=await Product.find({id:req.body.id});
-        if(product===null){
-            return res.status(404).json({message:'Product Not Found!'});
+    .get(async(req,res)=>{
+        try{
+            console.log(req.params.id);
+            let Prod=await Product.findOne({"id":req.params.id});
+            console.log(Prod);
+            return res.status(200).send(Prod);
+        }catch (err){
+            return res.status(500).json({message: err.message});
         }
-    }catch(err){
-        return res.status(500).json({message:err.message});
-    }
-    res.product=product;
-    next();
-}
+    })

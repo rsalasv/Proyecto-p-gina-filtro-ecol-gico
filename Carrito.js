@@ -16,14 +16,11 @@ function loadCart(){
         console.log(item);
         if(item!=null){
             itemRequest.open('GET',urlProducts+item,false);
-            console.log(urlProducts+item);
+            itemRequest.withCredentials=true;
+            console.log(urlProducts);
             itemRequest.setRequestHeader('Content-Type','application/json');
             itemRequest.addEventListener("readystatechange",checkItem);
-            let array=new Array;
-            array.push(item);
-            let payload=JSON.stringify(array[0]);
-            console.log(payload);
-            itemRequest.send(payload);
+            itemRequest.send();
         }
     }
 
@@ -45,6 +42,7 @@ function checkItem(){
     if(itemRequest.readyState===XMLHttpRequest.DONE){
         if(itemRequest.status===200||itemRequest.status===304){ //PUEDE SER 200 O 304 QUE ES LA MISMA RESPUESTA
             let respose=JSON.parse(itemRequest.responseText);
+            console.log(respose);
             insertItem(respose);
         }
         else{
@@ -54,6 +52,7 @@ function checkItem(){
 }
 
 function insertItem(item){
+    console.log(typeof item);
     let cart=document.getElementById("cart");
     cart.insertAdjacentHTML('afterend',`
     <tr id="item">
@@ -61,7 +60,7 @@ function insertItem(item){
                     ${item.nombre}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <img src="filtro.jpg" width="10%" height="10%">
                     <p id="itemP">Precio: ${item.costo}</p>
-                    <p>Fabricante: ${item.compañía}</p>
+                    <p>Fabricante: ${item.compañia}</p>
                     <button type="button" onclick="removeItem(event,${item.costo},${item.id})" class="btn btn-danger">Remove Item</button> 
                 </td>  
             </tr>
